@@ -1,0 +1,56 @@
+header {
+    border: 2px red solid;
+    height: 90px;
+    margin: 15px;
+}
+
+.title {
+    border: 2px green solid;
+    height: 90px;
+    margin: 15px;
+}
+
+.search {
+    border: 2px blue solid;
+    height: 90px;
+    margin: 15px;
+}
+
+.filter {    
+    border: 2px yellow solid;
+    height: 90px;
+    margin: 15px;
+}
+
+#results {
+    border: 2px rgb(255, 123, 0) solid;
+    height: 420px;
+    margin: 15px;
+    display: flex;
+}
+
+.house {
+    border: 2px blue solid;
+    height: 370px;
+    width: 600px;
+    margin: 25px;
+}
+
+.popular {
+    border: 2px blue solid;
+    height: 370px;
+    width: 240px;
+    margin: 25px;
+}
+
+#activities {
+    border: 2px rgb(255, 123, 0) solid;
+    height: 420px;
+    margin: 15px;
+}
+
+footer {
+    border: 2px red solid;
+    height: 90px;
+    margin: 15px;
+}
