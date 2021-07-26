@@ -32,14 +32,15 @@ header {
 .house {
     border: 2px blue solid;
     height: 370px;
-    width: 600px;
+    width: 550px;
     margin: 25px;
+    flex: 6;
 }
 
 .popular {
     border: 2px blue solid;
     height: 370px;
-    width: 240px;
+    width: 350px;
     margin: 25px;
 }
 
