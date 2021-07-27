@@ -1,3 +1,7 @@
+.container {
+    margin: 0 30px 40px 30px;
+}
+
 header {
     border: 2px red solid;
     height: 90px;
@@ -31,15 +35,13 @@ header {
 
 .house {
     border: 2px blue solid;
-    height: 120px;
-    width: 200px;
+    width: 70%;
     margin: 5px;
 }
 
 .popular {
     border: 2px blue solid;
-    height: 120px;
-    width: 200px;
+    width: 30%;
     margin: 5px;
 }
 
@@ -52,8 +54,72 @@ header {
 footer {
     border: 2px red solid;
     height: 90px;
-    margin: 15px;
 }
+
+/* Mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    header {
+        border: 2px red dotted;
+        height: 90px;
+        width: auto;
+        margin: 15px;
+    }
+    
+    .title {
+        border: 2px green dotted;
+        height: 90px;
+        margin: 15px;
+    }
+    
+    .search {
+        border: 2px blue dotted;
+        height: 90px;
+        margin: 15px;
+    }
+    
+    .filter {    
+        border: 2px yellow dotted;
+        height: 90px;
+        margin: 15px;
+    }
+    
+    #results {
+        border: 2px rgb(255, 123, 0) dotted;
+        height: 700px;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .popular {
+        border: 2px blue dotted;
+        height: 300px;
+        width: auto;
+        margin: 25px;
+        order: 1;
+    }
+
+    .house {
+        border: 2px blue dotted;
+        height: 300px;
+        width: auto;
+        margin: 25px;
+        order: 2;
+    }
+    
+    #activities {
+        border: 2px rgb(255, 123, 0) dotted;
+        height: 90px;
+        margin: 15px;
+    }
+    
+    footer {
+        border: 2px red dotted;
+        height: 90px;
+    }
+}
+
+/* Tablette */
 
 @media screen and (max-width: 1024px)
 {
@@ -115,6 +181,5 @@ footer {
     footer {
         border: 2px red dotted;
         height: 90px;
-        margin: 15px;
     }
 }
