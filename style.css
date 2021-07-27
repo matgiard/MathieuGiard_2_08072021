@@ -31,17 +31,16 @@ header {
 
 .house {
     border: 2px blue solid;
-    height: 370px;
-    width: 550px;
-    margin: 25px;
-    flex: 6;
+    height: 120px;
+    width: 200px;
+    margin: 5px;
 }
 
 .popular {
     border: 2px blue solid;
-    height: 370px;
-    width: 350px;
-    margin: 25px;
+    height: 120px;
+    width: 200px;
+    margin: 5px;
 }
 
 #activities {
@@ -54,4 +53,68 @@ footer {
     border: 2px red solid;
     height: 90px;
     margin: 15px;
+}
+
+@media screen and (max-width: 1024px)
+{
+    header {
+        border: 2px red dotted;
+        height: 90px;
+        width: auto;
+        margin: 15px;
+    }
+    
+    .title {
+        border: 2px green dotted;
+        height: 90px;
+        margin: 15px;
+    }
+    
+    .search {
+        border: 2px blue dotted;
+        height: 90px;
+        margin: 15px;
+    }
+    
+    .filter {    
+        border: 2px yellow dotted;
+        height: 90px;
+        margin: 15px;
+    }
+    
+    #results {
+        border: 2px rgb(255, 123, 0) dotted;
+        height: 700px;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .popular {
+        border: 2px blue dotted;
+        height: 300px;
+        width: auto;
+        margin: 25px;
+        order: 1;
+    }
+
+    .house {
+        border: 2px blue dotted;
+        height: 300px;
+        width: auto;
+        margin: 25px;
+        order: 2;
+    }
+    
+    #activities {
+        border: 2px rgb(255, 123, 0) dotted;
+        height: 90px;
+        margin: 15px;
+    }
+    
+    footer {
+        border: 2px red dotted;
+        height: 90px;
+        margin: 15px;
+    }
 }
