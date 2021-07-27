@@ -8,6 +8,10 @@ header {
     margin: 15px;
 }
 
+header:hover {
+    background-color: red;
+}
+
 .title {
     border: 2px green solid;
     height: 90px;
