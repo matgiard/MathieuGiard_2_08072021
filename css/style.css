@@ -6,10 +6,9 @@ header {
     border: 2px red solid;
     height: 90px;
     margin: 15px;
-}
-
-header:hover {
-    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .title {
@@ -60,7 +59,36 @@ footer {
     height: 90px;
 }
 
+#buttons {
+     list-style: none;
+     display: flex;
+}
+
+.button1 {
+    border: 1px black solid;
+}
+
+.button1:hover {
+    border-top: rgb(0, 101, 252) solid;
+}
+
+.button2:hover {
+    border-top: rgb(0, 101, 252) solid;
+}
+
+.button3 {
+     color: rgb(0, 101, 252);
+     font-family: Raleway;
+     font-weight: normal;
+}
+
+
+
+
+
+
 /* Mobile */
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     header {
         border: 2px red dotted;
