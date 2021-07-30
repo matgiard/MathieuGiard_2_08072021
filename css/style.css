@@ -1,14 +1,19 @@
+@font-face {
+    font-family: Raleway;
+    src: url(./Raleway/Raleway-VariableFont_wght.ttf);   
+}
+
 .container {
     margin: 0 30px 40px 30px;
+    font-family: Raleway;
 }
 
 header {
-    border: 2px red solid;
     height: 90px;
     margin: 15px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .title {
@@ -62,14 +67,21 @@ footer {
 #buttons {
      list-style: none;
      display: flex;
+     font-size: 13px;
+     text-align: right;
 }
 
 .button1 {
-    border: 1px black solid;
+    margin-right: 50px;
+    padding: 20px;
 }
 
 .button1:hover {
     border-top: rgb(0, 101, 252) solid;
+}
+
+.button2 {
+    padding: 20px;
 }
 
 .button2:hover {
@@ -78,8 +90,9 @@ footer {
 
 .button3 {
      color: rgb(0, 101, 252);
-     font-family: Raleway;
-     font-weight: normal;
+     font-weight: bold;
+     margin-left: 50px;
+     padding: 20px;
 }
 
 
