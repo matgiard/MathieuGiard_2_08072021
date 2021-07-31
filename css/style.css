@@ -17,7 +17,6 @@ header {
 }
 
 .title {
-    border: 2px green solid;
     height: 90px;
     margin: 15px;
 }
@@ -95,7 +94,13 @@ footer {
      padding: 20px;
 }
 
+.fat {
+    font-weight: bold;
+}
 
+.light {
+    font-size: 12px;
+}
 
 
 
