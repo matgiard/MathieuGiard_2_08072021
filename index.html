@@ -9,31 +9,118 @@
 
     <body>
 
+<!-- Mise en place d'un container pour définir la largeur de la page -->
         <div class="container">
+
+            <!-- Start Header  -->
             <header>
 
-                <img id="logo" alt="logo reservia" src="Ressources\Projet 2 - Reservia\images\logo\reservia.svg"/>
+                <div class="logo">
+                    <a href="index.html"><img alt="logo reservia" src="Ressources\Projet 2 - Reservia\images\logo\reservia.svg"/></a>
+                </div>
 
-                <ul id="buttons">
-                    <li class="button1">Hébergements</li>
-                    <li class="button2">Activités</li>
-                    <li class="button3">S'inscrire</li>
-                </ul>
+                <nav>
+                    <ul id="buttons">
+                        <li><a href="#results">Hébergements</a></li>
+                        <li><a href="#activities">Activités</a></li>
+                    </ul>
+                </nav>
+
+                <div class="subscribe">
+                    <a>S'inscrire</a>
+                </div>
 
             </header>
-            
+            <!-- Fin en place de l'en-tête -->
+
             <div class="title">
                 <p><span class="fat">Trouvez votre hébergement pour des vacances de rêves</span></br>
                 <span class="light">En plein centre ville ou en pleine nature</span></p>
             </div>
 
-            <div class="search">SEARCH</div>
+            <div class="search">
+                <label for="site-search"><i class="fa fa-map-marker-alt"></i></label><input placeholder="Marseille, France" type="search" id="site-search" name="q"aria-label="Search through site content"><button id="searchbutton">Rechercher</button>
+            </div>
 
-            <div class="filter">FILTRES</div>
+            <div class="filter">
+                <span class="filtertitle">Filtres</span>
+                    
+                    <div id="eco"><span class="icontitle"><i class="fa fa-money-bill-wave"></i>Économique</span></div>
+                    <div id="child"><span class="icontitle"><i class="fa fa-child"></i>Familial</span></div>
+                    <div id="heart"></i><span class="icontitle"><i class="fa fa-heart"></i>Romantique</span></div>
+                    <div id="dog"></i><span class="icontitle"><i class="fa fa-dog"></i>Animaux autorisés</span></div>
+ 
+            </div>
+
+            <div id="captionfilter"><div class="info-container"><i class="fa fa-info fa-xs"></i></div> Plus de 500 logements sont disponibles dans cette ville</div>
 
             <div id="results">
-                <div class="house">HEBERGEMENTS</div>
-                <div class="popular">POPULAR</div>
+                <div class="house">
+                    <span>Hébergements à Marseille</span>
+
+                    <div class="hotelsquares">
+
+                        
+                        <figure>
+                            <img src="./Ressources/Projet 2 - Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la cannebiere" />
+                            <figcaption>Auberge La Cannebière Nuit à partir de 25€</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="./Ressources/Projet 2 - Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port" />
+                            <figcaption>Hôtel du port Nuit à partir de 52€</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="./Ressources/Projet 2 - Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouettes" />
+                            <figcaption>Hôtel Les mouettes Nuit à partir de 76€</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="./Ressources/Projet 2 - Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel de la mer" />
+                            <figcaption>Hôtel de la mer Nuit à partir de 46€</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="./Ressources/Projet 2 - Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier" />
+                            <figcaption>Auberge Le Panier Nuit à partir de 23€</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="./Ressources/Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel amina" />
+                            <figcaption>Hôtel chez Amina Nuit à partir de 96€</figcaption>
+                        </figure>
+
+                    </div>
+
+                    <span>Afficher plus</span>
+
+                </div>
+
+                <div class="popular">
+                    <span>Les plus populaires</span>
+
+                    <div class="popularhotels">
+
+                        <div class="popularhotel">
+                            Hôtel Le soleil du matin
+                            Nuit à partir de 128€
+                        </div>
+
+                        <div class="popularhotel">
+                            Au coeur de l'eau
+                            Chambres d'hôtes
+                            Nuit à partir de 71€
+                        </div>
+
+                        <div class="popularhotel">
+                            Hôtel Tout bleu et Blanc
+                            Nuit à partir de 68 €
+                        </div>
+                        
+                    </div>    
+
+                </div>
             </div>
 
             <div id="activities">ACTIVITIES</div>

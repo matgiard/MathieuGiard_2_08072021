@@ -3,35 +3,187 @@
     src: url(./Raleway/Raleway-VariableFont_wght.ttf);   
 }
 
-.container {
-    margin: 0 30px 40px 30px;
+body {
     font-family: Raleway;
 }
 
+/* DESKTOP */
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+        /* header */
+
 header {
-    height: 90px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo {
+    display: flex;
+    width: 900px;
+    flex: 1;
+    margin-left: 10px;
+}
+
+#buttons {
+    display: flex;
+    font-size: 13px;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header nav ul a:hover {
+    border-top: 2px rgb(0, 101, 252) solid;
+    padding-top: 30px;
+    color: blue;
+}
+
+nav {
+    width: 300px;
+}
+
+.subscribe {
+    display: flex;
+    font-size: 13px;
+    color: rgb(0, 101, 252);
+    font-weight: bold;
+    width: 120px;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.subscribe:hover {
+    font-size: 90%;
+    cursor: pointer;
+}
+
+
+        /* title */  
+
+.title {
+    margin: 15px;
+}
+
+.fat {
+    font-weight: bold;
+}
+
+.light {
+    font-size: 12px;
+}
+
+        /* search */
+
+.search {
     margin: 15px;
     display: flex;
-    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.fa-map-marker-alt {
+    border: 2px #F2F2F2 solid;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    background-color: #F2F2F2;
+}
+
+#site-search {
+    border: 2px #F2F2F2 solid;
+    padding: 10px;
+    width: 220px;
+    font-weight: bold;
+}
+
+#searchbutton {
+    background-color: rgb(0, 101, 252);
+    color: white;
+    border: 0;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+    font-family: Raleway;
+    font-weight: bold;
+    height: 39.2px;
+}
+
+        /* filter */
+
+.filter {    
+    margin: 15px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 750px;
+}
+
+.filtertitle {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.icontitle {
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px #F2F2F2 solid;
+    padding-right: 10px;
+    border-radius: 30px;
+    border-left: 0px;
+    padding: 8px;
+    padding-left: 0px;
+}
+
+.filter i {
+    padding: 11px;
+    border-radius: 30px;
+    border-right: 2px #F2F2F2 solid;
+    margin-right: 9px;
+    color: rgb(0, 101, 252);
+    background-color: #DEEBFF;
+}
+
+#captionfilter {
+    font-size: 13px;
+    margin: 25px;
+    display: flex;
     align-items: center;
 }
 
-.title {
-    height: 90px;
-    margin: 15px;
+.info-container {
+    border: 2px #F2F2F2 solid;
+    border-radius: 25px;
+    padding-left: 4px;
+    height: 17px;
+    width: 13px;
+    margin-right: 5px;
 }
 
-.search {
-    border: 2px blue solid;
-    height: 90px;
-    margin: 15px;
+
+.fa-info {
+    color: rgb(0, 101, 252);
+    padding: 3px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
-.filter {    
-    border: 2px yellow solid;
-    height: 90px;
-    margin: 15px;
-}
+        /* results */
 
 #results {
     border: 2px rgb(255, 123, 0) solid;
@@ -40,10 +192,25 @@ header {
     display: flex;
 }
 
+.hotelsquares {
+    display: flex;
+    height: 360px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hotelsquares img {
+    height: 100px;
+    width: 170px;
+}
+
 .house {
     border: 2px blue solid;
     width: 70%;
     margin: 5px;
+    background-color: #F2F2F2;
 }
 
 .popular {
@@ -51,6 +218,17 @@ header {
     width: 30%;
     margin: 5px;
 }
+
+.popularhotels {
+    display: flex;
+}
+
+.popularhotel {
+    border: 2px chartreuse solid;
+}
+
+
+        /* activities */
 
 #activities {
     border: 2px rgb(255, 123, 0) solid;
@@ -63,67 +241,68 @@ footer {
     height: 90px;
 }
 
-#buttons {
-     list-style: none;
-     display: flex;
-     font-size: 13px;
-     text-align: right;
-}
 
-.button1 {
-    margin-right: 50px;
-    padding: 20px;
-}
+/* MOBILE */
 
-.button1:hover {
-    border-top: rgb(0, 101, 252) solid;
-}
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) {
 
-.button2 {
-    padding: 20px;
-}
+    .container{
+        margin: 0 auto;
+        max-width: 350px;
+    }
 
-.button2:hover {
-    border-top: rgb(0, 101, 252) solid;
-}
+        /* header */
 
-.button3 {
-     color: rgb(0, 101, 252);
-     font-weight: bold;
-     margin-left: 50px;
-     padding: 20px;
-}
-
-.fat {
-    font-weight: bold;
-}
-
-.light {
-    font-size: 12px;
-}
-
-
-
-
-/* Mobile */
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     header {
-        border: 2px red dotted;
-        height: 90px;
-        width: auto;
-        margin: 15px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav {
+        order: 2;
+        width: 100%;
+        border-bottom: 2px #F2F2F2 solid;
     }
     
+    .subscribe {
+        display: flex;
+    }
+
+    #buttons {
+        display: flex;
+        font-size: 12px;
+        justify-content: space-around;
+    }
+
+    header nav ul li {
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    header nav ul li:hover {
+        border-top: none;
+        border-bottom: rgb(0, 101, 252) solid;
+        color: rgb(0, 101, 252);
+    }
+
+   
+
+        /* title */    
+
     .title {
-        border: 2px green dotted;
-        height: 90px;
+        border: 2px purple dotted;
         margin: 15px;
     }
-    
+
+        /* search */
+
     .search {
         border: 2px blue dotted;
-        height: 90px;
         margin: 15px;
     }
     
@@ -167,28 +346,64 @@ footer {
         border: 2px red dotted;
         height: 90px;
     }
+    
 }
 
-/* Tablette */
+/* TABLETTE */
 
-@media screen and (max-width: 1024px)
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
 {
+    @font-face {
+        font-family: Raleway;
+        src: url(./Raleway/Raleway-VariableFont_wght.ttf);   
+    }
+
     header {
         border: 2px red dotted;
-        height: 90px;
         width: auto;
-        margin: 15px;
+        margin: 15px;        
+        display: flex;
+        flex-wrap: wrap;
     }
     
+    #buttons {
+        list-style: none;
+        display: flex;
+        font-size: 13px;
+        text-align: right;
+   }
+   
+   .button1 {
+       margin-right: 50px;
+       padding: 20px;
+   }
+   
+   .button1:hover {
+       border-bottom: rgb(0, 101, 252) solid;
+   }
+   
+   .button2 {
+       padding: 20px;
+   }
+   
+   .button2:hover {
+       border-bottom: rgb(0, 101, 252) solid;
+   }
+   
+   .button3 {
+        color: rgb(0, 101, 252);
+        font-weight: bold;
+        margin-left: 50px;
+        padding: 20px;
+   }
+
     .title {
         border: 2px green dotted;
-        height: 90px;
         margin: 15px;
     }
     
     .search {
         border: 2px blue dotted;
-        height: 90px;
         margin: 15px;
     }
     
