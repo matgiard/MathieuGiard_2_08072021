@@ -29,6 +29,12 @@ header {
     margin-left: 10px;
 }
 
+header .logo  a img {
+    width: 97px;
+    height: 45px;
+}
+
+
 #buttons {
     display: flex;
     font-size: 13px;
