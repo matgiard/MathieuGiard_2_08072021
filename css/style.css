@@ -59,7 +59,8 @@ header nav ul li a {
 header nav ul a:hover {
     border-top: 2px rgb(0, 101, 252) solid;
     padding-top: 30px;
-    color: blue;
+    color: rgb(0, 101, 252);
+    font-weight: bold;
 }
 
 nav {
@@ -77,7 +78,7 @@ nav {
 }
 
 .subscribe:hover {
-    font-size: 90%;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -129,6 +130,14 @@ nav {
     height: 39.2px;
 }
 
+#mobilesearch {
+    display: none;
+}
+
+#searchbutton:hover {
+    cursor: pointer;
+}
+
         /* filter */
 
 .filter {    
@@ -148,11 +157,10 @@ nav {
     font-size: 14px;
     font-weight: bold;
     border: 2px #F2F2F2 solid;
+    border-left: 0px;
     padding-right: 10px;
     border-radius: 30px;
-    border-left: 0px;
-    padding: 8px;
-    padding-left: 0px;
+    padding: 8px 24px 8px 0px;
 }
 
 .filter i {
@@ -192,10 +200,23 @@ nav {
         /* results */
 
 #results {
-    border: 2px rgb(255, 123, 0) solid;
-    height: 420px;
+    height: 485px;
     margin: 15px;
     display: flex;
+}
+
+.house {
+    width: 70%;
+    margin: 5px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.housecaphigh {
+    font-weight: bolder;
+    margin-left: 33px;
+    display: inline-block;
+    margin-top: 15px;
 }
 
 .hotelsquares {
@@ -207,16 +228,48 @@ nav {
     align-items: center;
 }
 
-.hotelsquares img {
-    height: 100px;
-    width: 170px;
+.framesample {
+    margin-right: auto;
+    margin-left: 29px;
+    width: 230px;
+    box-shadow: 2px 2px 2px rgb(215 218 224);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.house {
-    border: 2px blue solid;
-    width: 70%;
-    margin: 5px;
-    background-color: #F2F2F2;
+.hotelsquares img {
+    height: 110px;
+    width: 220px;
+    border: 5px white solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.descriptioncap {
+    font-size: 12px;
+    border: 6px white solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -9px;
+    background-color: white;
+}
+
+.hotelsquares span {
+    margin-left: 8px;
+}
+
+.figtitle {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.housecaplow {
+    font-weight: bold;
+    display: inline-flex;
+    margin-top: 27px;
+    margin-left: 33px;
 }
 
 .popular {
@@ -257,7 +310,7 @@ footer {
 
     .container{
         margin: 0 auto;
-        max-width: 350px;
+        max-width: 1280px;
     }
 
         /* header */
@@ -270,52 +323,82 @@ footer {
     nav {
         order: 2;
         width: 100%;
-        border-bottom: 2px #F2F2F2 solid;
-    }
-    
-    .subscribe {
-        display: flex;
     }
 
-    #buttons {
-        display: flex;
-        font-size: 12px;
-        justify-content: space-around;
-    }
-
-    header nav ul li {
-        text-decoration: none;
-        color: black;
-        padding: 10px;
+    header nav li {
+        border-bottom: 3px #F2F2F2 solid;
+        width: 100%;
         text-align: center;
+        padding: 10px;
     }
-    
-    header nav ul li:hover {
+
+    header nav li:hover {
         border-top: none;
         border-bottom: rgb(0, 101, 252) solid;
         color: rgb(0, 101, 252);
     }
 
-   
+    header nav ul a:hover {
+        border-top: none;
+    }    
+
+    .subscribe {
+        display: flex;
+    }
+
+    #buttons {
+        font-size: 12px;
+        padding: 0;
+        margin-top: 5px;
+    }
+  
 
         /* title */    
 
     .title {
-        border: 2px purple dotted;
         margin: 15px;
     }
 
         /* search */
 
     .search {
-        border: 2px blue dotted;
         margin: 15px;
     }
-    
+
+    #mobilesearch{
+        background-color: rgb(0, 101, 252);
+        border: none;
+        color: white;
+        width: 41px;
+        height: 41px;
+        border-radius: 14px;
+        display: revert;
+        margin-left: -9px;
+    }
+
+    .icontitle {
+        font-size: 11px;
+        font-weight: bold;
+        border: 2px #F2F2F2 solid;
+        border-left: 0px;
+        padding-right: 10px;
+        border-radius: 30px;
+        padding: 8px 24px 8px 0px;
+    }
+
+    #searchbutton {
+        display: none;
+    }
+
+        /* filter*/
+
     .filter {    
         border: 2px yellow dotted;
-        height: 90px;
+        height: 135px;
+        width: 295px;
         margin: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     
     #results {

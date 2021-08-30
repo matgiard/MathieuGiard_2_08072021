@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="css/all.css"/>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/all.css" />
         <title>Reservia - Trouvez votre hébergement pour vos vacances de rêves</title>
     </head>
 
@@ -39,7 +40,7 @@
             </div>
 
             <div class="search">
-                <label for="site-search"><i class="fa fa-map-marker-alt"></i></label><input placeholder="Marseille, France" type="search" id="site-search" name="q"aria-label="Search through site content"><button id="searchbutton">Rechercher</button>
+                <label for="site-search"><i class="fa fa-map-marker-alt"></i></label><input placeholder="Marseille, France" type="search" id="site-search" name="q"aria-label="Search through site content"><button id="searchbutton">Rechercher</button><button id="mobilesearch"><i class="fa fa-search"></i></button>
             </div>
 
             <div class="filter">
@@ -56,44 +57,68 @@
 
             <div id="results">
                 <div class="house">
-                    <span>Hébergements à Marseille</span>
+                    <span class="housecaphigh">Hébergements à Marseille</span>
 
                     <div class="hotelsquares">
 
                         
-                        <figure>
+                        <figure class="framesample">
                             <img src="./Ressources/Projet 2 - Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la cannebiere" />
-                            <figcaption>Auberge La Cannebière Nuit à partir de 25€</figcaption>
+                            <figcaption class="descriptioncap">
+                                 <span class="figtitle">Auberge la Cannebière</span><br>
+                                 <span>Nuit à partir de <strong>25€</strong></span><br>
+                                 <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            </figcaption>
                         </figure>
 
-                        <figure>
+                        <figure class="framesample">
                             <img src="./Ressources/Projet 2 - Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port" />
-                            <figcaption>Hôtel du port Nuit à partir de 52€</figcaption>
+                            <figcaption class="descriptioncap">
+                                <span class="figtitle">Hôtel du port</span><br>
+                                <span>Nuit à partir de <strong>52€</strong></span><br>
+                                <span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            </figcaption>
                         </figure>
 
-                        <figure>
+                        <figure class="framesample">
                             <img src="./Ressources/Projet 2 - Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hotel les mouettes" />
-                            <figcaption>Hôtel Les mouettes Nuit à partir de 76€</figcaption>
+                            <figcaption class="descriptioncap">
+                                <span class="figtitle">Hôtel Les mouettes</span><br>
+                                <span>Nuit à partir de <strong>76€</strong></span><br>
+                                <span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            </figcaption>
                         </figure>
 
-                        <figure>
+                        <figure class="framesample">
                             <img src="./Ressources/Projet 2 - Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel de la mer" />
-                            <figcaption>Hôtel de la mer Nuit à partir de 46€</figcaption>
+                            <figcaption class="descriptioncap">
+                                <span class="figtitle">Hôtel de la mer</span><br>
+                                <span>Nuit à partir de <strong>46€</strong></span><br>
+                                <span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            </figcaption>
                         </figure>
 
-                        <figure>
+                        <figure class="framesample">
                             <img src="./Ressources/Projet 2 - Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier" />
-                            <figcaption>Auberge Le Panier Nuit à partir de 23€</figcaption>
+                            <figcaption class="descriptioncap">
+                                <span class="figtitle">Auberge Le Panier</span><br> 
+                                <span>Nuit à partir de <strong>23€</strong></span><br>
+                                <span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            </figcaption>
                         </figure>
 
-                        <figure>
+                        <figure class="framesample">
                             <img src="./Ressources/Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel amina" />
-                            <figcaption>Hôtel chez Amina Nuit à partir de 96€</figcaption>
+                            <figcaption class="descriptioncap">
+                                <span class="figtitle">Hôtel chez Amina</span><br>
+                                <span>Nuit à partir de <strong>96€</strong></span><br>
+                                <span><span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            </figcaption>
                         </figure>
 
-                    </div>
+                    </div><br>
 
-                    <span>Afficher plus</span>
+                    <span class="housecaplow">Afficher plus</span>
 
                 </div>
 
