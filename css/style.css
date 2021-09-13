@@ -5,6 +5,7 @@
 
 body {
     font-family: Raleway;
+    margin: 0;
 }
 
 /* DESKTOP */
@@ -134,6 +135,10 @@ nav {
     display: none;
 }
 
+#searchbutton i {
+    display: none;
+}
+
 #searchbutton:hover {
     cursor: pointer;
 }
@@ -143,14 +148,27 @@ nav {
 .filter {    
     margin: 15px;
     display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-    width: 750px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mobilefilter {
+    display: none;
 }
 
 .filtertitle {
     font-weight: bold;
     font-size: 14px;
+    display: flex;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+#eco, #child, #heart, #dog {
+    margin-left: 10px;
 }
 
 .icontitle {
@@ -200,24 +218,26 @@ nav {
         /* results */
 
 #results {
-    height: 485px;
-    margin: 15px;
     display: flex;
+    align-items: center;
+    margin-left: 17px;
 }
 
 .house {
     width: 70%;
-    margin: 5px;
+    height: 540px;
     background-color: #F2F2F2;
     border-radius: 20px;
+    margin-right: 45px;
 }
 
 .housecaphigh {
     font-weight: bolder;
-    margin-left: 33px;
+    margin-left: 36px;
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 26px;
 }
+
 
 .hotelsquares {
     display: flex;
@@ -226,34 +246,42 @@ nav {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 22px;
+    margin-left: 31px;
 }
 
 .framesample {
     margin-right: auto;
-    margin-left: 29px;
-    width: 230px;
+    margin-left: 21px;
+    width: 210px;
     box-shadow: 2px 2px 2px rgb(215 218 224);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hotelsquares img {
     height: 110px;
-    width: 220px;
+    width: 200px;
     border: 5px white solid;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
 
 .descriptioncap {
     font-size: 12px;
     border: 6px white solid;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-top: -9px;
     background-color: white;
+}
+
+.descriptioncap .stars {
+    font-size: 12px;
+    display: inline-flex;
 }
 
 .hotelsquares span {
@@ -268,38 +296,156 @@ nav {
 .housecaplow {
     font-weight: bold;
     display: inline-flex;
-    margin-top: 27px;
-    margin-left: 33px;
+    margin-top: 43px;
+    margin-left: 36px;
 }
+
+
+    /* Popular */
 
 .popular {
-    border: 2px blue solid;
+    height: 540px;
     width: 30%;
-    margin: 5px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
 }
 
-.popularhotels {
-    display: flex;
+.poptitle {
+    display: inline-block;
+    margin-left: 44px;
+    margin-top: 32px;
+}
+
+.popcaphigh {
+    font-weight: bold;
+}
+
+.poptitle i {
+    margin-left: 108px;
+    font-size: 18px;
+}
+
+.popfigtitle {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.popnight {
+    font-size: 12px;
+}
+
+.popdescriptioncap .stars {
+    font-size: 12px;
+    display: inline-flex;
+    margin-top: 45px;
 }
 
 .popularhotel {
     border: 2px chartreuse solid;
+    height: 89px;
+    width: 280px;
 }
 
+.popframesample {
+    height: 128px;
+    width: 300px;
+    box-shadow: 2px 2px 2px rgb(215 218 224);
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+}
+
+.pophotelsquares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 470px;
+    justify-content: space-around;
+}
+
+.pophotelsquares img {
+    height: 117px;
+    width: 140px;
+    border: 5px white solid;
+    border-radius: 20px;
+}
 
         /* activities */
 
 #activities {
-    border: 2px rgb(255, 123, 0) solid;
-    height: 420px;
-    margin: 15px;
+    height: 496px;
 }
+
+.titleact {
+    display: block;
+    margin-top: 17px;
+    margin-left: 41px;
+    font-weight: bold;
+}
+
+.actonepic img {
+    height: 351px;
+    width: 240px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.actonepic {
+    margin-left: 20px;
+}
+
+.acttwopic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.acttwopic img {
+    height: 110px;
+    width: 213px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.actdescriptioncap {
+    border: 2px white solid;
+    padding: 11px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 3px 3px rgb(215 218 224);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.actframeonly {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+        /* footer */
+
 
 footer {
-    border: 2px red solid;
-    height: 90px;
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
 }
 
+.footelement {
+    width: 100%;
+}
+
+.footelement ul {
+    list-style: none;
+    line-height: 30px;
+}
+
+.footelement a {
+    text-decoration: none;
+    color: black;
+}
 
 /* MOBILE */
 
@@ -308,16 +454,12 @@ footer {
     and (device-height : 667px) 
     and (-webkit-device-pixel-ratio : 2) {
 
-    .container{
-        margin: 0 auto;
-        max-width: 1280px;
-    }
-
         /* header */
 
     header {
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-top: 20px;
     }
 
     nav {
@@ -369,11 +511,52 @@ footer {
         background-color: rgb(0, 101, 252);
         border: none;
         color: white;
-        width: 41px;
+        width: 50px;
         height: 41px;
         border-radius: 14px;
         display: revert;
         margin-left: -9px;
+    }
+
+    #site-search {
+        border: 2px #F2F2F2 solid;
+        padding: 10px;
+        width: 100%;
+        font-weight: bold;
+    }
+
+    #search-desktop {
+        display: none;
+    }
+
+    #searchbutton i {
+        display: block;
+    }
+
+        /* filter*/
+
+    .mobilefilter {
+        flex-direction: row;
+        flex-wrap: wrap;
+        display: block;
+        margin-left: 17px;
+    }
+
+    .iconsonly {
+        margin-top: 10px;
+    }
+
+    .ecofami {
+        display: flex;
+    }
+
+    #eco {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    #heart {
+        margin-bottom: 10px;
     }
 
     .icontitle {
@@ -386,56 +569,259 @@ footer {
         padding: 8px 24px 8px 0px;
     }
 
-    #searchbutton {
-        display: none;
+    .mobilefilter i {
+        padding: 11px;
+        border-radius: 30px;
+        margin-right: 9px;
+        color: rgb(0, 101, 252);
+        background-color: #DEEBFF;
     }
 
-        /* filter*/
-
-    .filter {    
-        border: 2px yellow dotted;
-        height: 135px;
-        width: 295px;
-        margin: 15px;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .fa-info {
+        color: rgb(0, 101, 252);
+        padding: 3px;
+        margin-right: 10px;
+        font-weight: bold;
+        font-size: 15px;
     }
+
+        /* results */    
     
     #results {
-        border: 2px rgb(255, 123, 0) dotted;
-        height: 700px;
-        margin: 15px;
+        height: auto;
         display: flex;
         flex-direction: column;
     }
+
+                /* popular */
     
     .popular {
-        border: 2px blue dotted;
-        height: 300px;
-        width: auto;
-        margin: 25px;
+        border: none;
+        height: auto;
+        width: 100%;
         order: 1;
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+                
+    .popularhotel {
+        border: 2px chartreuse solid;
+        height: 89px;
+        width: 280px;
     }
 
+    .poptitle {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .poptitle i {
+        margin-left: 120px;
+    }
+
+    .popcaphigh {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .popfigtitle {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .popnight {
+        font-size: 14px;
+    }
+
+    
+    .popdescriptioncap .stars {
+        font-size: 12px;
+        display: inline-flex;
+        margin-top: 0;
+    }
+
+    .popframesample {
+        height: 128px;
+        width: 300px;
+        box-shadow: 2px 2px 2px rgb(215 218 224);
+        border-radius: 20px;
+        background-color: white;
+        display: flex;
+    }
+    
+    .pophotelsquares img {
+        height: 118px;
+        width: 121px;
+        border: 5px white solid;
+        border-bottom-left-radius: 20px;
+        margin-right: 12px;
+        border-top-right-radius: 0px;
+    }
+
+    .poptextonly {
+        margin-bottom: 33px;
+    }
+
+    .popdescriptioncap {
+        display: flex;
+        flex-direction: column;
+        padding-top: 15px;
+    }
+
+                /* house */
+
     .house {
-        border: 2px blue dotted;
-        height: 300px;
+        height: 1262px;
         width: auto;
-        margin: 25px;
         order: 2;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 58px;
+    }
+
+    .housecaphigh {
+        font-weight: bolder;
+        display: inline-block;
+        margin-left: revert;
+        margin-top: 15px;
+        margin-right: 90px;
+        font-size: 17px;
+    }
+
+    .hotelsquares {
+        display: flex;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .framesample {
+        width: 300px;
+        box-shadow: 2px 2px 2px rgb(215 218 224);
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-right: revert;
+        margin-left: revert;
+    }
+
+    .hotelsquares img {
+        height: 116px;
+        width: 295px;
+        border: 5px white solid;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
     
+    .housecaplow {
+        font-weight: bold;
+        align-self: flex-start;
+        margin-left: 35px;
+        margin-top: 0;
+    }
+
+        /* activities */
+
     #activities {
-        border: 2px rgb(255, 123, 0) dotted;
-        height: 90px;
-        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        border: none;
+    }
+
+    .titleact {
+        font-weight: bold;
+        font-size: 17px;
+        margin-right: 128px;
+    }
+
+    .frameact {
+        width: 300px;
+        box-shadow: 2px 2px 2px rgb(215 218 224);
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .frameact img {
+        height: 119px;
+        width: 295px;
+        border: 5px white solid;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
     
+    .actdescriptioncap {
+        height: 27px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .actframeonly {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .actonepic img {
+        height: 116px;
+        width: 295px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    .actonepic {
+        margin-left: 0;
+        margin-bottom: 37px;
+    }
+    
+    .acttwopic {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .acttwopic img {
+        height: 116px;
+        width: 295px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .singletwopic {
+        margin-bottom: 37px;
+    }
+
+        /* footer */
+
     footer {
-        border: 2px red dotted;
-        height: 90px;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
     }
-    
+
+    .footelement h3 {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .footelement a {
+        font-size: 14px;
+    }
+
 }
 
 /* TABLETTE */
