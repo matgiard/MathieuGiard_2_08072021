@@ -544,17 +544,6 @@ footer {
         width: 230px;
     }
 
-    #mobilesearch{
-        background-color: rgb(0, 101, 252);
-        border: none;
-        color: white;
-        width: 50px;
-        height: 41px;
-        border-radius: 14px;
-        display: revert;
-        margin-left: -9px;
-    }
-
     #site-search {
         border: none;
         padding: 10px;
@@ -674,12 +663,7 @@ footer {
         margin-bottom: 10px;
         border-radius: initial;
     }
-                
-    .popularhotel {
-        border: 2px chartreuse solid;
-        height: 89px;
-        width: 280px;
-    }
+
 
     .poptitle {
         display: block;
