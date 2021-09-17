@@ -87,11 +87,12 @@ nav {
         /* title */  
 
 .title {
-    margin: 15px;
+    margin: 25px 25px 25px 15px;
 }
 
 .fat {
     font-weight: bold;
+    margin-bottom: 6px;
 }
 
 .light {
@@ -104,6 +105,10 @@ nav {
     margin: 15px;
     display: flex;
     align-items: flex-start;
+}
+
+.inbutt {
+    display: flex;
 }
 
 .fa-map-marker-alt {
@@ -131,10 +136,6 @@ nav {
     height: 39.2px;
 }
 
-#mobilesearch {
-    display: none;
-}
-
 #searchbutton i {
     display: none;
 }
@@ -160,6 +161,7 @@ nav {
     font-weight: bold;
     font-size: 14px;
     display: flex;
+    align-items: center;
 }
 
 .icons {
@@ -172,19 +174,18 @@ nav {
 }
 
 .icontitle {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     border: 2px #F2F2F2 solid;
     border-left: 0px;
-    padding-right: 10px;
     border-radius: 30px;
-    padding: 8px 24px 8px 0px;
+    padding: 9px 14px 8px 0px;
+    display: initial;
 }
 
 .filter i {
     padding: 11px;
     border-radius: 30px;
-    border-right: 2px #F2F2F2 solid;
     margin-right: 9px;
     color: rgb(0, 101, 252);
     background-color: #DEEBFF;
@@ -192,7 +193,7 @@ nav {
 
 #captionfilter {
     font-size: 13px;
-    margin: 25px;
+    margin: 25px 25px 25px 15px;
     display: flex;
     align-items: center;
 }
@@ -220,12 +221,11 @@ nav {
 #results {
     display: flex;
     align-items: center;
-    margin-left: 17px;
+    margin-left: 15px;
 }
 
 .house {
     width: 70%;
-    height: 540px;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-right: 45px;
@@ -241,19 +241,18 @@ nav {
 
 .hotelsquares {
     display: flex;
-    height: 360px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 22px;
-    margin-left: 31px;
+    margin-left: 11px;
 }
 
 .framesample {
     margin-right: auto;
     margin-left: 21px;
-    width: 210px;
+    width: 230px;
     box-shadow: 2px 2px 2px rgb(215 218 224);
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -265,7 +264,7 @@ nav {
 
 .hotelsquares img {
     height: 110px;
-    width: 200px;
+    width: 219px;
     border: 5px white solid;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -296,15 +295,15 @@ nav {
 .housecaplow {
     font-weight: bold;
     display: inline-flex;
-    margin-top: 43px;
-    margin-left: 36px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+    margin-left: 38px;
 }
 
 
     /* Popular */
 
 .popular {
-    height: 540px;
     width: 30%;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -334,20 +333,19 @@ nav {
     font-size: 12px;
 }
 
+.poptextonly {
+    margin-top: 10px;
+    margin-left: 13px;
+}
+
 .popdescriptioncap .stars {
     font-size: 12px;
     display: inline-flex;
-    margin-top: 45px;
-}
-
-.popularhotel {
-    border: 2px chartreuse solid;
-    height: 89px;
-    width: 280px;
+    margin-top: 37px;
+    margin-left: 13px;
 }
 
 .popframesample {
-    height: 128px;
     width: 300px;
     box-shadow: 2px 2px 2px rgb(215 218 224);
     border-radius: 20px;
@@ -365,27 +363,29 @@ nav {
 
 .pophotelsquares img {
     height: 117px;
-    width: 140px;
+    width: 125px;
     border: 5px white solid;
     border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
         /* activities */
 
 #activities {
-    height: 496px;
+    margin-bottom: 50px;
 }
 
 .titleact {
     display: block;
     margin-top: 17px;
-    margin-left: 41px;
+    margin-left: 25px;
     font-weight: bold;
 }
 
 .actonepic img {
     height: 351px;
-    width: 240px;
+    width: 270px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -402,7 +402,7 @@ nav {
 
 .acttwopic img {
     height: 110px;
-    width: 213px;
+    width: 230px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -420,7 +420,7 @@ nav {
 
 .actframeonly {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 28px;
 }
 
@@ -431,6 +431,7 @@ footer {
     width: 100%;
     background-color: #F2F2F2;
     display: flex;
+    padding-left: 118px;
 }
 
 .footelement {
@@ -445,6 +446,11 @@ footer {
 .footelement a {
     text-decoration: none;
     color: black;
+    font-size: 13px;
+}
+
+.footelement h3 {
+    font-size: 15px;
 }
 
 /* MOBILE */
@@ -459,7 +465,7 @@ footer {
     header {
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 20px;
+        margin-top: 2px;
     }
 
     nav {
@@ -494,6 +500,13 @@ footer {
         margin-top: 5px;
     }
   
+    .logo {
+        display: flex;
+        width: 900px;
+        flex: 1;
+        margin-left: 20px;
+    }
+
 
         /* title */    
 
@@ -501,10 +514,34 @@ footer {
         margin: 15px;
     }
 
+    .fat {
+        font-weight: bold;
+        margin-left: 14px;
+        margin-bottom: 9px;
+    }
+
+    .light {
+        font-size: 12px;
+        margin-left: 14px;
+    }
+
+
+
         /* search */
 
     .search {
-        margin: 15px;
+        margin: auto;
+        width: 302px;
+        margin-left: 28px;
+        display: flex;
+    }
+
+    .inbutt {
+        border: 1px #F2F2F2 solid;
+        display: flex;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 230px;
     }
 
     #mobilesearch{
@@ -519,10 +556,19 @@ footer {
     }
 
     #site-search {
-        border: 2px #F2F2F2 solid;
+        border: none;
         padding: 10px;
-        width: 100%;
         font-weight: bold;
+    }
+
+    #searchbutton {
+        background-color: rgb(0, 101, 252);
+        color: white;
+        border: 0;
+        border-radius: 10px;
+        width: 50px;
+        font-weight: bold;
+        height: 40px;
     }
 
     #search-desktop {
@@ -535,15 +581,26 @@ footer {
 
         /* filter*/
 
-    .mobilefilter {
+    .filter {
+        margin: 15px;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        display: block;
-        margin-left: 17px;
     }
 
-    .iconsonly {
-        margin-top: 10px;
+    .filtertitle {
+        font-weight: bold;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 16px;
     }
 
     .ecofami {
@@ -557,21 +614,22 @@ footer {
 
     #heart {
         margin-bottom: 10px;
+        margin-right: 25px;
     }
 
     .icontitle {
-        font-size: 11px;
+        font-size: 14px;
         font-weight: bold;
         border: 2px #F2F2F2 solid;
         border-left: 0px;
-        padding-right: 10px;
         border-radius: 30px;
-        padding: 8px 24px 8px 0px;
+        padding: 6px 10px 8px 0px;
     }
 
-    .mobilefilter i {
+    .filter i {
         padding: 11px;
         border-radius: 30px;
+        border-right: 2px #F2F2F2 solid;
         margin-right: 9px;
         color: rgb(0, 101, 252);
         background-color: #DEEBFF;
@@ -585,12 +643,21 @@ footer {
         font-size: 15px;
     }
 
+    #captionfilter {
+        font-size: 13px;
+        margin: 25px 25px 25px 28px;
+        display: flex;
+        align-items: center;
+    }
+
         /* results */    
     
     #results {
         height: auto;
         display: flex;
         flex-direction: column;
+        margin-left: auto;
+        margin-bottom: 20px;
     }
 
                 /* popular */
@@ -605,6 +672,7 @@ footer {
         background-color: #F2F2F2;
         align-items: center;
         margin-bottom: 10px;
+        border-radius: initial;
     }
                 
     .popularhotel {
@@ -615,16 +683,19 @@ footer {
 
     .poptitle {
         display: block;
-        margin-top: 20px;
+        margin-top: 25px;
+        margin-left: unset;
+        margin-bottom: 15px;
     }
 
     .poptitle i {
-        margin-left: 120px;
+        margin-left: 163px;
     }
 
     .popcaphigh {
         font-weight: bold;
         font-size: 17px;
+        margin-left: 2px;
     }
 
     .popfigtitle {
@@ -634,54 +705,65 @@ footer {
 
     .popnight {
         font-size: 14px;
+        display: inline-block;
+        margin-top: 9px;
     }
 
     
     .popdescriptioncap .stars {
         font-size: 12px;
         display: inline-flex;
-        margin-top: 0;
+        margin-top: 4px;
+        margin-left: initial;
     }
 
     .popframesample {
-        height: 128px;
-        width: 300px;
+        height: 145px;
+        width: 340px;
         box-shadow: 2px 2px 2px rgb(215 218 224);
         border-radius: 20px;
         background-color: white;
         display: flex;
     }
+
+    .pophotelsquares {
+        margin-bottom: 15px;
+    }
     
     .pophotelsquares img {
-        height: 118px;
+        height: 135px;
         width: 121px;
         border: 5px white solid;
         border-bottom-left-radius: 20px;
         margin-right: 12px;
         border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 
     .poptextonly {
         margin-bottom: 33px;
+        padding-right: 41px;
+        margin-left: initial;
+        margin-top: initial;
     }
 
     .popdescriptioncap {
         display: flex;
         flex-direction: column;
-        padding-top: 15px;
+        margin-top: 17px;
     }
 
                 /* house */
 
     .house {
-        height: 1262px;
+        height: auto;
         width: auto;
         order: 2;
         background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 58px;
+        margin-right: auto;
     }
 
     .housecaphigh {
@@ -689,7 +771,7 @@ footer {
         display: inline-block;
         margin-left: revert;
         margin-top: 15px;
-        margin-right: 90px;
+        margin-right: 117px;
         font-size: 17px;
     }
 
@@ -700,10 +782,11 @@ footer {
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
+        margin-left: auto;
     }
 
     .framesample {
-        width: 300px;
+        width: 340px;
         box-shadow: 2px 2px 2px rgb(215 218 224);
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
@@ -714,7 +797,7 @@ footer {
 
     .hotelsquares img {
         height: 116px;
-        width: 295px;
+        width: 335px;
         border: 5px white solid;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -723,8 +806,10 @@ footer {
     .housecaplow {
         font-weight: bold;
         align-self: flex-start;
-        margin-left: 35px;
+        margin-left: 28px;
         margin-top: 0;
+        font-size: 15px;
+        margin-bottom: 0;
     }
 
         /* activities */
@@ -735,12 +820,14 @@ footer {
         align-items: center;
         height: auto;
         border: none;
+        margin-bottom: 0;
     }
 
     .titleact {
         font-weight: bold;
         font-size: 17px;
-        margin-right: 128px;
+        align-self: baseline;
+        margin-left: 29px;
     }
 
     .frameact {
@@ -776,7 +863,7 @@ footer {
 
     .actonepic img {
         height: 116px;
-        width: 295px;
+        width: 340px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
@@ -784,17 +871,19 @@ footer {
     .actonepic {
         margin-left: 0;
         margin-bottom: 37px;
+        width: 340px;
     }
     
     .acttwopic {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        width: 340px;
     }
     
     .acttwopic img {
         height: 116px;
-        width: 295px;
+        width: 340px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
@@ -811,6 +900,7 @@ footer {
         flex-direction: column;
         align-items: baseline;
         justify-content: center;
+        padding-left: 0;
     }
 
     .footelement h3 {
