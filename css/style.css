@@ -268,6 +268,7 @@ nav {
     border: 5px white solid;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .descriptioncap {
@@ -368,6 +369,7 @@ nav {
     border-radius: 20px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    object-fit: cover;
 }
 
         /* activities */
@@ -388,6 +390,7 @@ nav {
     width: 270px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .actonepic {
@@ -405,6 +408,7 @@ nav {
     width: 230px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 .actdescriptioncap {
@@ -431,11 +435,11 @@ footer {
     width: 100%;
     background-color: #F2F2F2;
     display: flex;
-    padding-left: 118px;
 }
 
 .footelement {
     width: 100%;
+    margin-left: 115px;
 }
 
 .footelement ul {
@@ -460,6 +464,10 @@ footer {
     and (device-height : 667px) 
     and (-webkit-device-pixel-ratio : 2) {
 
+    .container {
+        max-width: 375px;
+    }
+    
         /* header */
 
     header {
@@ -571,7 +579,7 @@ footer {
         /* filter*/
 
     .filter {
-        margin: 15px;
+        margin: 15px 0px 15px 15px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -722,6 +730,7 @@ footer {
         margin-right: 12px;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
+        object-fit: cover;
     }
 
     .poptextonly {
@@ -785,6 +794,7 @@ footer {
         border: 5px white solid;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        object-fit: cover;
     }
     
     .housecaplow {
@@ -830,6 +840,7 @@ footer {
         border: 5px white solid;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        object-fit: cover;
     }
     
     .actdescriptioncap {
@@ -850,6 +861,7 @@ footer {
         width: 340px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        object-fit: cover;
     }
     
     .actonepic {
@@ -870,6 +882,7 @@ footer {
         width: 340px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        object-fit: cover;
     }
 
     .singletwopic {
@@ -885,6 +898,11 @@ footer {
         align-items: baseline;
         justify-content: center;
         padding-left: 0;
+        width: auto;
+    }
+
+    .footelement {
+        margin-left: unset;
     }
 
     .footelement h3 {
@@ -907,93 +925,225 @@ footer {
         src: url(./Raleway/Raleway-VariableFont_wght.ttf);   
     }
 
-    header {
-        border: 2px red dotted;
-        width: auto;
-        margin: 15px;        
-        display: flex;
-        flex-wrap: wrap;
+    .container {
+        max-width: 1024px;
+        margin-left: 5px;
     }
-    
+
+                /* header */
+
+    header {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    .logo {
+        display: flex;
+        width: 900px;
+        flex: 1;
+        margin-left: 10px;
+    }
+
+    header .logo  a img {
+        width: 97px;
+        height: 45px;
+    }
+
+
     #buttons {
+        display: flex;
+        font-size: 13px;
+        justify-content: space-around;
+    }
+
+    header nav ul li {
+        list-style: none;
+        text-decoration: none;
+        color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    header nav ul li a {
+        color: black;
+        text-decoration: none;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    header nav ul a:hover {
+        border-top: 2px rgb(0, 101, 252) solid;
+        padding-top: 30px;
+        color: rgb(0, 101, 252);
+        font-weight: bold;
+    }
+
+    nav {
+        width: 300px;
+    }
+
+    .subscribe {
+        display: flex;
+        font-size: 13px;
+        color: rgb(0, 101, 252);
+        font-weight: bold;
+        width: 120px;
+        justify-content: center;
+        margin-left: 25px;
+    }
+
+    .subscribe:hover {
+        font-size: 16px;
+        cursor: pointer;
+    }
+        
+     #buttons {
         list-style: none;
         display: flex;
         font-size: 13px;
         text-align: right;
-   }
-   
-   .button1 {
-       margin-right: 50px;
-       padding: 20px;
-   }
-   
-   .button1:hover {
-       border-bottom: rgb(0, 101, 252) solid;
-   }
-   
-   .button2 {
-       padding: 20px;
-   }
-   
-   .button2:hover {
-       border-bottom: rgb(0, 101, 252) solid;
-   }
-   
-   .button3 {
+    }
+    
+    .button1 {
+        margin-right: 50px;
+        padding: 20px;
+    }
+    
+    .button1:hover {
+        border-bottom: rgb(0, 101, 252) solid;
+    }
+    
+    .button2 {
+        padding: 20px;
+    }
+    
+    .button2:hover {
+        border-bottom: rgb(0, 101, 252) solid;
+    }
+    
+    .button3 {
         color: rgb(0, 101, 252);
         font-weight: bold;
         margin-left: 50px;
         padding: 20px;
-   }
+    }
+
+            /* title */
 
     .title {
-        border: 2px green dotted;
         margin: 15px;
     }
+
+            /* search */
     
     .search {
-        border: 2px blue dotted;
         margin: 15px;
     }
+
+            /* filter */
     
-    .filter {    
-        border: 2px yellow dotted;
-        height: 90px;
+    .filter {
         margin: 15px;
+        align-items: baseline;
     }
-    
+
+            /* results */    
+
     #results {
-        border: 2px rgb(255, 123, 0) dotted;
-        height: 700px;
         margin: 15px;
         display: flex;
         flex-direction: column;
+        height: auto;
     }
     
+                        /* popular */
+
     .popular {
-        border: 2px blue dotted;
-        height: 300px;
-        width: auto;
-        margin: 25px;
+        width: 100%;
         order: 1;
     }
 
+    .poptitle {
+        display: inline-block;
+        margin-left: 38px;
+        margin-top: 32px;
+        margin-bottom: 10px;
+    }
+
+    .pophotelsquares {
+        display: flex;
+        flex-direction: row;
+        height: 305px;
+        flex-wrap: wrap;
+        margin-left: 30px;
+    }
+
+    .popframesample {
+        width: 300px;
+        box-shadow: 2px 2px 2px rgb(215 218 224);
+        border-radius: 20px;
+        background-color: white;
+        display: flex;
+        height: 130px;
+        margin-right: auto;
+    }
+
+                        /* House */
+
     .house {
-        border: 2px blue dotted;
-        height: 300px;
-        width: auto;
+        height: auto;
+        width: 100%;
         margin: 25px;
         order: 2;
     }
+
+        /* Activities */
+
     
     #activities {
-        border: 2px rgb(255, 123, 0) dotted;
-        height: 90px;
-        margin: 15px;
+        height: auto;
+        margin: 15px 50px 15px 0px;
     }
+
+    .actonepic img {
+        height: 290px;
+        width: 164px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+
+    .acttwopic img {
+        height: 83px;
+        width: 140px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+    }
+
+    .actdescriptioncap {
+        border: 2px white solid;
+        padding: 4px;
+        background-color: white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 2px 3px 3px rgb(215 218 224);
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+        /* Footer */
     
     footer {
-        border: 2px red dotted;
-        height: 90px;
+        height: auto;
+        width: auto;
+        padding-left: 0px;
     }
+
+    .footelement {
+        margin-left: unset;
+    }
+
 }
