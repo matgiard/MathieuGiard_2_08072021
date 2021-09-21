@@ -167,10 +167,18 @@ nav {
 .icons {
     display: flex;
     flex-direction: row;
+    width: 750px;
+    margin-left: 4px;
+    justify-content: space-around;
 }
 
 #eco, #child, #heart, #dog {
     margin-left: 10px;
+}
+
+#eco:hover, #child:hover, #heart:hover, #dog:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .icontitle {
@@ -246,7 +254,13 @@ nav {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 22px;
-    margin-left: 11px;
+    margin-right: 40px;
+}
+
+.hotelsquares a, .pophotelsquares a, .actframeonly a {
+    list-style: none;
+    text-decoration: none;
+    color: unset;
 }
 
 .framesample {
@@ -261,6 +275,7 @@ nav {
     display: flex;
     flex-direction: column;
 }
+
 
 .hotelsquares img {
     height: 110px;
@@ -542,6 +557,7 @@ footer {
         width: 302px;
         margin-left: 28px;
         display: flex;
+        margin-left: 28px;
     }
 
     .inbutt {
@@ -549,7 +565,7 @@ footer {
         display: flex;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-        width: 230px;
+        width: auto;
     }
 
     #site-search {
@@ -563,9 +579,9 @@ footer {
         color: white;
         border: 0;
         border-radius: 10px;
-        width: 50px;
+        width: 41px;
         font-weight: bold;
-        height: 40px;
+        height: 38px;
     }
 
     #search-desktop {
@@ -598,6 +614,8 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 16px;
+        width: unset;
+        justify-content: initial;
     }
 
     .ecofami {
@@ -776,6 +794,7 @@ footer {
         justify-content: space-evenly;
         align-items: center;
         margin-left: auto;
+        margin-right: auto;
     }
 
     .framesample {
@@ -1049,6 +1068,10 @@ footer {
         align-items: baseline;
     }
 
+    .icons {
+        width: auto;
+    }
+
             /* results */    
 
     #results {
@@ -1077,7 +1100,8 @@ footer {
         flex-direction: row;
         height: 305px;
         flex-wrap: wrap;
-        margin-left: 30px;
+        justify-content: flex-start;
+        margin-left: 33px;
     }
 
     .popframesample {
@@ -1087,7 +1111,7 @@ footer {
         background-color: white;
         display: flex;
         height: 130px;
-        margin-right: auto;
+        margin-right: 50px;
     }
 
                         /* House */
