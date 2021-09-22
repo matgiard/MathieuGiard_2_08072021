@@ -391,6 +391,7 @@ nav {
 
 #activities {
     margin-bottom: 50px;
+    margin-top: 35px;
 }
 
 .titleact {
@@ -402,7 +403,7 @@ nav {
 
 .actonepic img {
     height: 351px;
-    width: 270px;
+    width: 275px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
@@ -415,12 +416,12 @@ nav {
 .acttwopic {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .acttwopic img {
-    height: 110px;
-    width: 230px;
+    height: 145px;
+    width: 275px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
@@ -439,7 +440,7 @@ nav {
 
 .actframeonly {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 28px;
 }
 
@@ -518,7 +519,7 @@ footer {
     }
 
     #buttons {
-        font-size: 12px;
+        font-size: 14px;
         padding: 0;
         margin-top: 5px;
     }
@@ -539,13 +540,14 @@ footer {
 
     .fat {
         font-weight: bold;
-        margin-left: 14px;
+        margin-left: 20px;
         margin-bottom: 9px;
+        font-size: 19px;
     }
 
     .light {
-        font-size: 12px;
-        margin-left: 14px;
+        font-size: 14px;
+        margin-left: 21px;
     }
 
 
@@ -555,9 +557,10 @@ footer {
     .search {
         margin: auto;
         width: 302px;
-        margin-left: 28px;
         display: flex;
-        margin-left: 28px;
+        margin-left: 33px;
+        margin-top: 25px;
+        margin-bottom: 30px;
     }
 
     .inbutt {
@@ -595,7 +598,7 @@ footer {
         /* filter*/
 
     .filter {
-        margin: 15px 0px 15px 15px;
+        margin: 15px 0px 15px 22px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -603,7 +606,7 @@ footer {
 
     .filtertitle {
         font-weight: bold;
-        font-size: 14px;
+        font-size: 15px;
         display: flex;
         align-items: center;
         margin-left: 15px;
@@ -660,7 +663,7 @@ footer {
 
     #captionfilter {
         font-size: 13px;
-        margin: 25px 25px 25px 28px;
+        margin: 25px 25px 25px 35px;
         display: flex;
         align-items: center;
     }
@@ -710,7 +713,8 @@ footer {
 
     .popfigtitle {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 14px;
+        padding-right: 4px;
     }
 
     .popnight {
@@ -807,6 +811,21 @@ footer {
         margin-left: revert;
     }
 
+    .descriptioncap {
+        font-size: 12px;
+        border: 6px white solid;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+        height: 54px;
+    }
+
+    .hotelsquares span {
+        margin-left: 11px;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
     .hotelsquares img {
         height: 116px;
         width: 335px;
@@ -863,9 +882,11 @@ footer {
     }
     
     .actdescriptioncap {
-        height: 27px;
+        height: 18px;
         font-weight: bold;
         font-size: 13px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 
     .actframeonly {
@@ -1128,7 +1149,11 @@ footer {
     
     #activities {
         height: auto;
-        margin: 15px 50px 15px 0px;
+        margin: 0px 20px 30px 20px;
+    }
+
+    .actonepic {
+        margin-left: auto;
     }
 
     .actonepic img {
@@ -1140,8 +1165,8 @@ footer {
     }
 
     .acttwopic img {
-        height: 83px;
-        width: 140px;
+        height: 117px;
+        width: 160px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         object-fit: cover;
@@ -1151,11 +1176,13 @@ footer {
         border: 2px white solid;
         padding: 4px;
         background-color: white;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
         box-shadow: 2px 3px 3px rgb(215 218 224);
         font-weight: bold;
         font-size: 10px;
+        height: 18px;
+        padding-left: 8px;
     }
 
         /* Footer */
