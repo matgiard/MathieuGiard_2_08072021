@@ -329,6 +329,7 @@ nav {
     display: inline-block;
     margin-left: 44px;
     margin-top: 32px;
+    margin-bottom: 14px;
 }
 
 .popcaphigh {
@@ -366,14 +367,14 @@ nav {
     box-shadow: 2px 2px 2px rgb(215 218 224);
     border-radius: 20px;
     background-color: white;
-    display: flex;
+    display: flex;  
+    margin-bottom: 25px;
 }
 
 .pophotelsquares {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 470px;
     justify-content: space-around;
 }
 
@@ -403,7 +404,7 @@ nav {
 
 .actonepic img {
     height: 351px;
-    width: 275px;
+    width: 285px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
@@ -419,8 +420,32 @@ nav {
     justify-content: space-between;
 }
 
-.acttwopic img {
-    height: 145px;
+.actpom {
+    height: 175px;
+    width: 275px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.actfri {
+    height: 100px;
+    width: 275px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.actga {
+    height: 120px;
+    width: 275px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.actlong {
+    height: 150px;
     width: 275px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -476,8 +501,8 @@ footer {
 /* MOBILE */
 
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 667px) 
+    and (min-device-width : 375px) 
+    and (max-device-height : 667px) 
     and (-webkit-device-pixel-ratio : 2) {
 
     .container {
@@ -904,6 +929,10 @@ footer {
         object-fit: cover;
     }
     
+    .singletwopic {
+        margin-bottom: 30px;
+    }
+
     .actonepic {
         margin-left: 0;
         margin-bottom: 37px;
@@ -923,10 +952,6 @@ footer {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         object-fit: cover;
-    }
-
-    .singletwopic {
-        margin-bottom: 37px;
     }
 
         /* footer */
@@ -958,7 +983,7 @@ footer {
 
 /* TABLETTE */
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+@media only screen and (min-width : 768px) and (max-width : 1200px)
 {
     @font-face {
         font-family: Raleway;
@@ -967,7 +992,6 @@ footer {
 
     .container {
         max-width: 1024px;
-        margin-left: 5px;
     }
 
                 /* header */
@@ -1119,7 +1143,6 @@ footer {
     .pophotelsquares {
         display: flex;
         flex-direction: row;
-        height: 305px;
         flex-wrap: wrap;
         justify-content: flex-start;
         margin-left: 33px;
