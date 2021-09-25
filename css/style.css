@@ -169,7 +169,7 @@ nav {
     flex-direction: row;
     width: 750px;
     margin-left: 4px;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 #eco, #child, #heart, #dog {
@@ -187,12 +187,12 @@ nav {
     border: 2px #F2F2F2 solid;
     border-left: 0px;
     border-radius: 30px;
-    padding: 9px 14px 8px 0px;
+    padding: 10px 23px 10px 0px;
     display: initial;
 }
 
 .filter i {
-    padding: 11px;
+    padding: 12px;
     border-radius: 30px;
     margin-right: 9px;
     color: rgb(0, 101, 252);
@@ -329,8 +329,8 @@ nav {
 .poptitle {
     display: inline-block;
     margin-left: 35px;
-    margin-top: 32px;
-    margin-bottom: 14px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .popcaphigh {
