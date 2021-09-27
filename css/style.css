@@ -520,7 +520,7 @@ footer {
 
 /* MOBILE */
 
-@media only screen and (min-width : 50px) and (max-width : 768px) {
+@media only screen and (min-width : 50px) and (max-width : 667px) {
 
     .container {
         max-width: 375px;
@@ -902,7 +902,7 @@ footer {
 
     .titleact {
         font-weight: bold;
-        font-size: 17px;
+        font-size: 18px;
         align-self: baseline;
         margin-left: 25px;
     }
@@ -984,12 +984,19 @@ footer {
         flex-direction: column;
         align-items: baseline;
         justify-content: center;
-        padding-left: 0;
-        width: auto;
+        width: 375px;
+        margin: auto;
     }
 
     .footelement1 {
         margin-left: unset;
+        margin-top: 15px;
+    }
+
+    .footelement1 ul, .footelement2 ul, .footelement3 ul {
+        list-style: none;
+        line-height: 30px;
+        padding-inline-start: 27px;
     }
 
     .footelement1 h3, .footelement2 h3, .footelement3 h3 {
@@ -1005,7 +1012,7 @@ footer {
 
 /* TABLETTE */
 
-@media only screen and (min-width : 768px) and (max-width : 1200px)
+@media only screen and (min-width : 667px) and (max-width : 1200px)
 {
     @font-face {
         font-family: Raleway;
@@ -1247,7 +1254,6 @@ footer {
     footer {
         height: auto;
         width: auto;
-        padding-left: 0px;
     }
 
     .footelement1 {
